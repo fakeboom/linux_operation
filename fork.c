@@ -8,12 +8,12 @@ int main ()
     if (fpid < 0)   
         printf("error in fork!");   
     else if (fpid == 0) {  
-        printf("i am the child process, my process id is %d/n",getpid());   
+        printf("i am the child process, my process id is %d\n",getpid());   
         printf("我是爹的儿子/n");//对某些人来说中文看着更直白。  
         count++;  
     }  
     else {  
-        printf("i am the parent process, my process id is %d/n",getpid());   
+        printf("i am the parent process, my process id is %d\n",getpid());   
         printf("我是孩子他爹/n");  
         count++;  
     }  
