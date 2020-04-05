@@ -1,6 +1,5 @@
 #include <unistd.h>  
 #include <stdio.h>   
-#include<dos.h> 
 int main ()   
 {   
     char * begin = (char *)malloc(1000000000);
@@ -10,7 +9,7 @@ int main ()
     if (fpid < 0)   
         printf("error in fork!");   
     else if (fpid == 0) {  
-        delay(60000);
+        sleep(60);
         printf("i am the child process, my process id is %d\n",getpid()); 
         for(int i =0;i<50000000;i++){
             begin[i] = 'a';
