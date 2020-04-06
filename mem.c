@@ -2,7 +2,8 @@
 #include <stdio.h>   
 int main ()   
 {   
-    char * begin = (char *)malloc(1000000000);
+    size_t sizel = 1000000000;
+    char * begin = (char *)malloc(sizel);
     if(begin == NULL){
         printf("error : malloc failed");
     }
@@ -15,9 +16,7 @@ int main ()
     else if (fpid == 0) {  
         sleep(60);
         printf("i am the child process, my process id is %d\n",getpid()); 
-        for(i =0;i<1000000000;i++){
-            begin[i] = 'a';
-        }  
+        memset(begin,'a',sizeof(begin));
         printf("\ntest ------%c----",begin[10000000]);
         count++;  
     }  
