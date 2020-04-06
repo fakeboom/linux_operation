@@ -3,6 +3,9 @@
 int main ()   
 {   
     char * begin = (char *)malloc(1000000000);
+    if(begin == NULL){
+        printf("error : malloc failed");
+    }
     pid_t fpid; //fpid表示fork函数返回的值  
     int count=0,i = 0;  
     fpid=fork();   
