@@ -20,6 +20,7 @@ int main ()
         printf("i am the child process, my process id is %d\n",getpid()); 
         memset(begin,'a',sizel);
         printf("\ntest ------%c----",begin[10000000]);
+        sleep(60);
         count++;  
     }  
     else {  
