@@ -4,7 +4,7 @@
 #include <string.h>
 int main ()   
 {   
-    size_t sizel = 1000000000;
+    size_t sizel = 700000000;
     char * begin = (char *)malloc(sizel);
     if(begin == NULL){
         printf("error : malloc failed");
