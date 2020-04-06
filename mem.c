@@ -11,12 +11,14 @@ int main ()
     else if (fpid == 0) {  
         sleep(60);
         printf("i am the child process, my process id is %d\n",getpid()); 
-        for(i =0;i<50000000;i++){
+        for(i =0;i<1000000000;i++){
             begin[i] = 'a';
         }  
+        printf("\ntest ------%c----",begin[10000000])
         count++;  
     }  
     else {  
+        sleep(70);
         printf("i am the parent process, my process id is %d\n",getpid());   
         count++;  
     }  
