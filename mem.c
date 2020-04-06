@@ -6,6 +6,7 @@ int main ()
     pid_t fpid; //fpid表示fork函数返回的值  
     int count=0,i = 0;  
     fpid=fork();   
+    printf("father %d----chlid %d\n",getid(),fpid);
     if (fpid < 0)   
         printf("error in fork!");   
     else if (fpid == 0) {  
