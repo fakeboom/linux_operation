@@ -1,6 +1,7 @@
 #include <unistd.h>  
 #include <stdio.h>   
 #include <stdlib.h>
+#include <string.h>
 int main ()   
 {   
     size_t sizel = 1000000000;
