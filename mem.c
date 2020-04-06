@@ -14,7 +14,7 @@ int main ()
         for(i =0;i<1000000000;i++){
             begin[i] = 'a';
         }  
-        printf("\ntest ------%c----",begin[10000000])
+        printf("\ntest ------%c----",begin[10000000]);
         count++;  
     }  
     else {  
