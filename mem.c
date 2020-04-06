@@ -18,7 +18,7 @@ int main ()
     else if (fpid == 0) {  
         sleep(60);
         printf("i am the child process, my process id is %d\n",getpid()); 
-        memset(begin,'a',sizeof(begin));
+        memset(begin,'a',sizel);
         printf("\ntest ------%c----",begin[10000000]);
         count++;  
     }  
